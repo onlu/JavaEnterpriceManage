@@ -21,18 +21,18 @@
 ```
 用户表：
 ```SQL
-create table t_user{
+create table t_user(
     id int primary key auto_increment,
     username varchar(30),
     password varchar(50),
     nickname varchar(30)
-}
+);
  
 insert into t_user values(1,'admin','e10adc3949ba59abbe56e057f20f883e','管理员')
 ```
 员工表：
 ```SQL
-create table t_emp{
+create table t_emp(
     id int primary key auto_increment,
     ename varchar(30),
     age int(3),
@@ -40,7 +40,7 @@ create table t_emp{
     sal double,
     birthday varchar(15),
     edate varchar(15)
-};
+);
 
 INSERT INTO `t_emp` VALUES(1,'美美',20,'女',10000,'1990-11-11','2018-11-11');
 INSERT INTO `t_emp` VALUES(1,'小凤',25,'女',8000,'1990-11-11','2018-11-11');
