@@ -1,5 +1,5 @@
 # 企业管理系统
-## 需求
+## 一、需求
 ### 1.系统用户模块
     ①用户可以使用用户名和密码登录该系统
     ②系统登录页面需要对用户名和密码进行校验，用户名不能为空，密码非空，且长度在3-10位之间
@@ -13,3 +13,12 @@
     ④删除员工，对员工删除时需要先询问是否删除，用户点击却行才会删除，删除成功后跳转到用户列表页面
 ### 3.系统权限功能
     ①系统中的功能必须是在用户登录的情况下才能使用，如果没有登录，会跳转到登录页面
+## 二、数据库设计
+用户表：
+`create table t_user{
+    id int primary key auto_increment,
+    username varchar(30),
+    password varchar(50),
+    nickname varchar(30)
+}` 
+`insert into t_user values(1,'admin','e10adc3949ba59abbe56e057f20f883e','管理员')`
