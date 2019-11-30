@@ -14,6 +14,11 @@
 ### 3.系统权限功能
     ①系统中的功能必须是在用户登录的情况下才能使用，如果没有登录，会跳转到登录页面
 ## 二、数据库设计
+创建数据库：
+```SQL
+    create database txweb;
+    use txweb;
+```
 用户表：
 ```SQL
 create table t_user{
