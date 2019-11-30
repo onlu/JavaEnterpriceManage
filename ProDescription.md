@@ -15,10 +15,13 @@
     ①系统中的功能必须是在用户登录的情况下才能使用，如果没有登录，会跳转到登录页面
 ## 二、数据库设计
 用户表：
-`create table t_user{
+```
+create table t_user{
     id int primary key auto_increment,
     username varchar(30),
     password varchar(50),
     nickname varchar(30)
-}` 
-`insert into t_user values(1,'admin','e10adc3949ba59abbe56e057f20f883e','管理员')`
+}
+ 
+insert into t_user values(1,'admin','e10adc3949ba59abbe56e057f20f883e','管理员')
+```
